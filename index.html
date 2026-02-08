@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce Demo</title>
+
+    <!-- CSS connection -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+
+</head>
+<body>
+
+<h1>E-Commerce Application</h1>
+
+<h2>Add Item</h2>
+<div class="form">
+    <input type="text" id="name" placeholder="Item Name">
+    <input type="text" id="description" placeholder="Description">
+    <input type="number" id="price" placeholder="Price">
+    <button onclick="addItem()">Submit</button>
+</div>
+
+<h2>All Items</h2>
+<button onclick="getAllItems()">Load Items</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody id="itemsTable"></tbody>
+</table>
+
+<!-- JavaScript connection -->
+<script src="app.js"></script>
+</body>
+</html>
